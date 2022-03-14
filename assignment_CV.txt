@@ -1,0 +1,9 @@
+Nguyễn Hồng Thương:
+- làm html/css: header và footer của CV.
+
+Nguyễn Thái Sơn:
+- làm html/css: Top main, About Me, Professional Skills của CV.
+- thiết kế responsive cho CV.
+
+Đỗ Thiện Tài:
+- làm html/css: Work Experience, Education, Contact của CV.
