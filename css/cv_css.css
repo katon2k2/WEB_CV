@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	background-color: #F5F7FA;
+	line-height: 1.5;
+}
+
+/* CSS main */
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main>section{
+	width: 1036px;
+	background-color: #FFFFFF;
+}
+
+	/* CSS top main */
+.Top-main-content{
+	height: 264px;
+	background-color: #4A89DC;
+	background-image: url(../images/top_main_gridlines.svg);
+	display: flex;
+}
+
+.Top-main-avatar{
+	width: 216px;
+	height: 216px;
+	position: relative;
+	top: 65px;
+	left: 45px;
+	background-color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Top-main-avatar img{
+	width: 200px;
+}
+
+.Top-main-info{
+	height: auto;
+	position: relative;
+	left: 105px;
+	padding: 48px;
+}
+
+.Name-and-specialized{
+	color: white;
+}
+
+.Name-and-specialized h1{
+	font-size: 2.5rem;
+	margin: 10px 0;
+}
+
+.Name-and-specialized p{
+	margin-bottom: 15px;
+}
+
+.Top-main-btns{
+	display: flex;
+}
+
+.Top-main-btns a{
+	display: inline-block;
+	font-size: 0.9375rem;
+	text-align: center;
+	padding: 8px 24px;
+	margin: 1px;
+}
+
+.Btn-download{
+	background-color: #E6E9ED;
+	margin-top: 8px;
+	margin-right: 8px;
+}
+
+.Btn-download a{
+	color: #434a54;
+}
+
+.Btn-hire{
+	background-color: #37BC9B;
+	margin-top: 8px;
+}
+
+.Btn-hire a{
+	color: #FFFFFF;
+}
+
+.Btn-download, .Btn-hire{
+	height: 40.5px;
+	border-radius: 3rem;
+}
+
+/*ANIMATION CSS*/
+.Name, .Specialized, .Top-main-btns{
+	animation: Top_main_info_animation 1s;
+	animation-fill-mode: both;
+}
+
+.Name{
+	animation-delay: 0.1s;
+}
+.Specialized{
+	animation-delay: 0.2s;
+}
+.Top-main-btns{
+	animation-delay: 0.3s;
+}
+
+@keyframes Top_main_info_animation{
+	0%{
+		margin-left: 150px;
+		opacity: 0;
+	}
+	100%{
+		margin-left: 0;
+		opacity: 1;
+	}
+}
