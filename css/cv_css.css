@@ -104,6 +104,58 @@ main>section{
 	border-radius: 3rem;
 }
 
+	/* CSS about main */
+#About-main{
+	padding-top: 50px;
+	padding-bottom: 32px;
+}
+
+.About-main-content{
+	display: flex;
+}
+
+.About-me{
+	flex: 1.2;
+}
+
+.Info-me{
+	flex: 1;
+	padding-top: 25px;
+	padding-left: 100px;
+}
+
+.Info-me .row{
+	display: flex;
+}
+
+.Info-me .left{
+	flex: 1;
+}
+
+.Info-me .right{
+	flex: 2;
+}
+
+.Info-me .right, .Info-me .left{
+	padding-bottom: 8px;
+}
+
+.About-me>p, .Info-me .right, .Info-me .left{
+	color: #434a54;
+}
+
+	/*Common Attributes*/
+.P-lr{
+	padding-left: 48px;
+	padding-right: 48px;
+}
+
+h2{
+	font-size: 28px;
+	color: #434a54;
+	margin-bottom: 32px;
+}
+
 /*ANIMATION CSS*/
 .Name, .Specialized, .Top-main-btns{
 	animation: Top_main_info_animation 1s;
