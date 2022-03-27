@@ -1,58 +1,101 @@
 *{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	text-decoration: none;
-	box-sizing: border-box;
-	font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body{
-	background-color: #F5F7FA;
-	line-height: 1.5;
+    background-color: #F5F7FA;
+    line-height: 1.5;
 }
 
-/* CSS header */
+/*CSS header */
 header{
-	height: 104px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header>section{
-	width: 1036px;
-	display: flex;
-	justify-content: space-between;
+    width: 1036px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-name{
-	font-size: 1.25rem;
-	line-height: 2.5rem;
-	font-weight: 600;
-	color: #434a54;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    color: #434a54;
 }
 
 .social-networking{
-	display: flex;
-	font-size: 20px;
-	line-height: 40px;
-	align-items: center;
+    display: flex;
+    font-size: 20px;
+    line-height: 40px;
+    align-items: center;
 }
 
 .social-networking li{
-	margin: 0 7px;
+    margin: 0 7px;
 }
 .social-networking li:last-child{
-	margin-right: 0;
+    margin-right: 0;
 }
 .social-networking li:first-child{
-	margin-left: 0;
+    margin-left: 0;
 }
 
 .social-networking a{
-	color: #6c757d;
+    color: #6c757d;
 }
 .social-networking a:hover{
-	color: #343a40;
+    color: #343a40;
+}
+
+/*CSS footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0px;
+}
+footer>section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-name{
+    color: #6c757d;
+    font-size: 1.5rem;
+    margin-top: 32px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+footer>.social-networking{
+    color: #6c757d;
+    margin-bottom: 32px;
+}
+
+footer p{
+    color: #6c757d;
+    font-size: 0.875rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+footer div>a{
+    border-bottom: 1px dashed #6c757d;
+}
+
+/*Common Attributes*/
+p{
+    color: #434a54;
 }
