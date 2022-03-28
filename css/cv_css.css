@@ -7,54 +7,57 @@
 	font-family: sans-serif;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	background-color: #F5F7FA;
 	line-height: 1.5;
 }
 
-/*CSS header */
+/* CSS header */
 header{
-    height: 104px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	height: 104px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 header>section{
-    width: 1036px;
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .header-name{
-    font-size: 1.25rem;
-    line-height: 2.5rem;
-    font-weight: 600;
-    color: #434a54;
+	font-size: 1.25rem;
+	line-height: 2.5rem;
+	font-weight: 600;
+	color: #434a54;
 }
 
 .social-networking{
-    display: flex;
-    font-size: 20px;
-    line-height: 40px;
-    align-items: center;
+	display: flex;
+	font-size: 20px;
+	line-height: 40px;
+	align-items: center;
 }
 
 .social-networking li{
-    margin: 0 7px;
+	margin: 0 7px;
 }
 .social-networking li:last-child{
-    margin-right: 0;
+	margin-right: 0;
 }
 .social-networking li:first-child{
-    margin-left: 0;
+	margin-left: 0;
 }
 
 .social-networking a{
-    color: #6c757d;
+	color: #6c757d;
 }
 .social-networking a:hover{
-    color: #343a40;
+	color: #343a40;
 }
 
 /* CSS main */
@@ -64,9 +67,14 @@ main{
 	align-items: center;
 }
 
-main>section{
-	width: 1036px;
+#Father>section{
 	background-color: #FFFFFF;
+}
+
+#Father{
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
 }
 
 	/* CSS top main */
@@ -80,13 +88,12 @@ main>section{
 .Top-main-avatar{
 	width: 216px;
 	height: 216px;
-	position: relative;
-	top: 65px;
-	left: 45px;
 	background-color: #FFFFFF;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: 0.18s;
 }
 
 .Top-main-avatar img{
@@ -97,7 +104,6 @@ main>section{
 	height: auto;
 	position: relative;
 	left: 105px;
-	padding: 48px;
 }
 
 .Name-and-specialized{
@@ -105,12 +111,12 @@ main>section{
 }
 
 .Name-and-specialized h1{
-	font-size: 2.5rem;
 	margin: 10px 0;
 }
 
 .Name-and-specialized p{
 	margin-bottom: 15px;
+	color: #FFFFFF;
 }
 
 .Top-main-btns{
@@ -129,6 +135,7 @@ main>section{
 	background-color: #E6E9ED;
 	margin-top: 8px;
 	margin-right: 8px;
+	transition: 0.18s;
 }
 
 .Btn-download a{
@@ -138,6 +145,8 @@ main>section{
 .Btn-hire{
 	background-color: #37BC9B;
 	margin-top: 8px;
+	transition: 2s;
+	transition: 0.18s;
 }
 
 .Btn-hire a{
@@ -147,6 +156,10 @@ main>section{
 .Btn-download, .Btn-hire{
 	height: 40.5px;
 	border-radius: 3rem;
+}
+
+.Top-main-avatar:hover, .Btn-download:hover, .Btn-hire:hover{
+	transform: translateY(-2px);
 }
 
 	/* CSS about main */
@@ -166,7 +179,6 @@ main>section{
 .Info-me{
 	flex: 1;
 	padding-top: 25px;
-	padding-left: 100px;
 }
 
 .Info-me .row{
@@ -183,10 +195,6 @@ main>section{
 
 .Info-me .right, .Info-me .left{
 	padding-bottom: 8px;
-}
-
-.About-me>p, .Info-me .right, .Info-me .left{
-	color: #434a54;
 }
 
 	/* CSS Professional skills */
@@ -329,27 +337,6 @@ main>section{
 	resize: none;
 }
 
-input, textarea{
-	width: 100%;
-	height: 40px;
-	color: #434a54;
-	font-size: 1rem;
-	padding: 6px 12px;
-    background-color: #f8f9fa;
-    background-clip: padding-box;
-    margin-bottom: 1rem;
-    border: 2px solid #dee2e6;
-    border-radius: 0.25rem;
-}
-
-input:focus, textarea:focus{
-	color: #434a54;
-	background-color: #fff;
-	border-color: #a5c4ee;
-	outline: 0;
-	box-shadow: 0 0 0 0.25rem rgb(74 137 220 / 25%);
-}
-
 .Btn-send{
 	color: #FFFFFF;
 	font-size: .9375rem;
@@ -390,42 +377,42 @@ input:focus, textarea:focus{
 	margin-bottom: 16px;
 }
 
-/*CSS footer */
+/* CSS footer */
 footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 48px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 48px 0px;
 }
 footer>section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .footer-name{
-    color: #6c757d;
-    font-size: 1.5rem;
-    margin-top: 32px;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    line-height: 1.2;
+	color: #6c757d;
+	font-size: 1.5rem;
+	margin-top: 32px;
+	margin-bottom: 1rem;
+	font-weight: 600;
+	line-height: 1.2;
 }
 
-footer>.social-networking{
-    color: #6c757d;
-    margin-bottom: 32px;
+footer .social-networking{
+	color: #6c757d;
+	margin-bottom: 32px;
 }
 
 footer p{
-    color: #6c757d;
-    font-size: 0.875rem;
-    display: inline-block;
-    margin-bottom: 0.5rem;
+	color: #6c757d;
+	font-size: 0.875rem;
+	display: inline-block;
+	margin-bottom: 0.5rem;
 }
 
 footer div>a{
-    border-bottom: 1px dashed #6c757d;
+	border-bottom: 1px dashed #6c757d;
 }
 
 /*Common Attributes*/
@@ -439,16 +426,6 @@ footer div>a{
 	padding-bottom: 32px;
 }
 
-h2{
-	font-size: 28px;
-	color: #434a54;
-	margin-bottom: 32px;
-}
-
-hr{
-	width: 1036px;
-}
-
 p, h2, h3, .Info-me .right, .Info-me .left{
 	color: #434a54;
 }
@@ -458,6 +435,7 @@ span, h4{
 }
 
 span{
+	font-size: 0.875rem;
 	margin-bottom: 16px;
 }
 
@@ -480,6 +458,27 @@ hr{
 	border: 0;
 	height: 1px;
 	background-color: #e6e9ed;
+}
+
+input, textarea{
+	width: 100%;
+	height: 40px;
+	color: #434a54;
+	font-size: 1rem;
+	padding: 6px 12px;
+    background-color: #f8f9fa;
+    background-clip: padding-box;
+    margin-bottom: 1rem;
+    border: 2px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+input:focus, textarea:focus{
+	color: #434a54;
+	background-color: #fff;
+	border-color: #a5c4ee;
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem rgb(74 137 220 / 25%);
 }
 
 /*ANIMATION CSS*/
