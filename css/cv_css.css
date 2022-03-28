@@ -144,16 +144,69 @@ main>section{
 	color: #434a54;
 }
 
-	/*Common Attributes*/
+	/* CSS Professional skills */
+.level{
+	display: flex;
+}
+
+.level .left{
+	padding-right: 12px;
+}
+
+.level .left>div{
+	margin-bottom: 16px;
+}
+
+.level .right{
+	padding-left: 12px;
+}
+
+.level .right>div{
+	margin-bottom: 16px;	
+}
+
+.level .left, .level .right{
+	flex: 1;
+}
+
+.level-animation{
+	height: 16px;
+	background-color: #e9ecef;
+	border-radius: 0.25rem;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+.left .level-animation div{
+	background-color: #4A89DC;
+}
+
+.right .level-animation div{
+	background-color: #37BC9B;
+}
+
+/*Common Attributes*/
 .P-lr{
 	padding-left: 48px;
 	padding-right: 48px;
+}
+
+.P-tb{
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
 
 h2{
 	font-size: 28px;
 	color: #434a54;
 	margin-bottom: 32px;
+}
+
+hr{
+	width: 1036px;
+	border: 0;
+	height: 1px;
+	background-color: #e6e9ed;
 }
 
 /*ANIMATION CSS*/
@@ -172,6 +225,21 @@ h2{
 	animation-delay: 0.3s;
 }
 
+.level-animation>div{
+	animation: level_skills_animation 1s;
+	animation-fill-mode: both;
+}
+
+.lv1>div{
+	animation-delay: 0.1s;
+}
+.lv2>div{
+	animation-delay: 0.2s;
+}
+.lv3>div{
+	animation-delay: 0.3s;
+}
+
 @keyframes Top_main_info_animation{
 	0%{
 		margin-left: 150px;
@@ -179,6 +247,19 @@ h2{
 	}
 	100%{
 		margin-left: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes level_skills_animation{
+	0%{
+		width: calc(var(--level_width) - 30%);
+		height: 16px;
+		opacity: 0;
+	}
+	100%{
+		width: var(--level_width);
+		height: 16px;
 		opacity: 1;
 	}
 }
