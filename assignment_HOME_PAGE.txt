@@ -1,0 +1,6 @@
+Nguyễn Hồng Thương:
+- làm html/css: của trang chủ.
+
+Đỗ Thiện Tài:
+- thiết kế responsive cho trang chủ.
+
