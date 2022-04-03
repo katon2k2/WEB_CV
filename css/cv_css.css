@@ -29,34 +29,34 @@ header>section{
 	justify-content: space-between;
 }
 
-.header-name{
+.Header-name{
 	font-size: 1.25rem;
 	line-height: 2.5rem;
 	font-weight: 600;
 	color: #434a54;
 }
 
-.social-networking{
+.Social-networking{
 	display: flex;
 	font-size: 20px;
 	line-height: 40px;
 	align-items: center;
 }
 
-.social-networking li{
+.Social-networking li{
 	margin: 0 7px;
 }
-.social-networking li:last-child{
+.Social-networking li:last-child{
 	margin-right: 0;
 }
-.social-networking li:first-child{
+.Social-networking li:first-child{
 	margin-left: 0;
 }
 
-.social-networking a{
+.Social-networking a{
 	color: #6c757d;
 }
-.social-networking a:hover{
+.Social-networking a:hover{
 	color: #343a40;
 }
 
@@ -181,48 +181,48 @@ main{
 	padding-top: 25px;
 }
 
-.Info-me .row{
+.Info-me .Row{
 	display: flex;
 }
 
-.Info-me .left{
+.Info-me .Left{
 	flex: 1;
 }
 
-.Info-me .right{
+.Info-me .Right{
 	flex: 2;
 }
 
-.Info-me .right, .Info-me .left{
+.Info-me .Right, .Info-me .Left{
 	padding-bottom: 8px;
 }
 
 	/* CSS Professional skills */
-.level{
+.Level{
 	display: flex;
 }
 
-.level .left{
+.Level .Left{
 	padding-right: 12px;
 }
 
-.level .left>div{
+.Level .Left>div{
 	margin-bottom: 16px;
 }
 
-.level .right{
+.Level .Right{
 	padding-left: 12px;
 }
 
-.level .right>div{
+.Level .Right>div{
 	margin-bottom: 16px;	
 }
 
-.level .left, .level .right{
+.Level .Left, .Level .Right{
 	flex: 1;
 }
 
-.level-animation{
+.Level-animation{
 	height: 16px;
 	background-color: #e9ecef;
 	border-radius: 0.25rem;
@@ -230,21 +230,21 @@ main{
 	margin-top: 5px;
 }
 
-.left .level-animation div{
+.Left .Level-animation div{
 	background-color: #4A89DC;
 }
 
-.right .level-animation div{
+.Right .Level-animation div{
 	background-color: #37BC9B;
 }
 
 	/* CSS Work Experience and Education */
-.timeline{
+.Timeline{
 	border-left: 2px solid #E6E9ED;
     padding: 1rem 0;
 }
 
-.card-body{
+.Card-body{
 	display: flex;
 	flex-direction: column;
 	padding: 32px;
@@ -263,7 +263,7 @@ main{
 	border-left: 2px solid #37BC9B;
 }
 
-.timeline .first:before{
+.Timeline .first:before{
 	content: "";
 	width: 7px;
 	height: 7px;
@@ -276,7 +276,7 @@ main{
 	top: 27px;
 }
 
-.timeline .first:after{
+.Timeline .first:after{
 	content: "";
 	width: 29px;
 	height: 1px;
@@ -286,7 +286,7 @@ main{
 	left: -30px;
 }
 
-.timeline .second:before{
+.Timeline .second:before{
 	content: "";
 	width: 7px;
 	height: 7px;
@@ -299,7 +299,7 @@ main{
 	top: 27px;
 }
 
-.timeline .second:after{
+.Timeline .second:after{
 	content: "";
 	width: 29px;
 	height: 1px;
@@ -309,29 +309,29 @@ main{
 	left: -30px;
 }
 
-.title-card{
+.Title-card{
 	margin-bottom: 8px;
 }
 
 	/* CSS Contact */
-.Contact-main-content .row{
+.Contact-main-content .Row{
 	display: flex;
 }
 
-.form-contact{
+.Form-contact{
 	flex: 1.5;
 	padding-right: 12px;
 }
 
-.input-name{
+.Input-name{
 	margin-right: 12px;
 }
 
-.input-email{
+.Input-email{
 	margin-left: 12px;
 }
 
-.input-message{
+.Input-message{
 	height: 112px;
 	line-height: 1.5rem;
 	resize: none;
@@ -363,17 +363,17 @@ main{
 	box-shadow: 0 0 0 0.25rem rgb(74 137 220 / 25%);
 }
 
-.info-contact{
+.Info-contact{
 	flex: 1;
 	padding-left: 12px;
 }
 
-.info-contact h4{
+.Info-contact h4{
 	margin-bottom: 16px;
 	color: #434a54;
 }
 
-.info-contact p{
+.Info-contact p{
 	margin-bottom: 16px;
 }
 
@@ -390,7 +390,7 @@ footer>section{
 	align-items: center;
 }
 
-.footer-name{
+.Footer-name{
 	color: #6c757d;
 	font-size: 1.5rem;
 	margin-top: 32px;
@@ -399,7 +399,7 @@ footer>section{
 	line-height: 1.2;
 }
 
-footer .social-networking{
+footer .Social-networking{
 	color: #6c757d;
 	margin-bottom: 32px;
 }
@@ -426,7 +426,7 @@ footer div>a{
 	padding-bottom: 32px;
 }
 
-p, h2, h3, .Info-me .right, .Info-me .left{
+p, h2, h3, .Info-me .Right, .Info-me .Left{
 	color: #434a54;
 }
 
@@ -483,8 +483,7 @@ input:focus, textarea:focus{
 
 /*ANIMATION CSS*/
 .Name, .Specialized, .Top-main-btns{
-	animation: Top_main_info_animation 1s;
-	animation-fill-mode: both;
+	animation: Top_main_info_animation 1s both;
 }
 
 .Name{
@@ -494,21 +493,6 @@ input:focus, textarea:focus{
 	animation-delay: 0.2s;
 }
 .Top-main-btns{
-	animation-delay: 0.3s;
-}
-
-.level-animation>div{
-	animation: level_skills_animation 1s;
-	animation-fill-mode: both;
-}
-
-.lv1>div{
-	animation-delay: 0.1s;
-}
-.lv2>div{
-	animation-delay: 0.2s;
-}
-.lv3>div{
 	animation-delay: 0.3s;
 }
 

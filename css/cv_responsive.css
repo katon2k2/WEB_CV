@@ -95,7 +95,7 @@
 		justify-content: center;
 		text-align: center;
 	}
-	.social-networking{
+	.Social-networking{
 		justify-content: center;
 	}
 
@@ -142,38 +142,20 @@
 	}
 
 	/* Responsive Contact */
-	.Contact-main-content>.row{
+	.Contact-main-content>.Row{
 		flex-direction: column;
 	}
-	.info-contact{
+	.Info-contact{
 		padding-left: 0;
 		margin-top: 10px;
 	}
 
 	/* Responsive Professional-skills*/
-	.level{
+	.Level{
 		flex-direction: column;
 	}
-	.level .left, .level .right{
+	.Level .Left, .Level .Right{
 		padding: 0;
-	}
-	.left .lv1>div{
-		animation-delay: 0.1s;
-	}
-	.left .lv2>div{
-		animation-delay: 0.2s;
-	}
-	.left .lv3>div{
-		animation-delay: 0.3s;
-	}
-	.right .lv1>div{
-		animation-delay: 0.4s;
-	}
-	.right .lv2>div{
-		animation-delay: 0.5s;
-	}
-	.right .lv3>div{
-		animation-delay: 0.6s;
 	}
 	
 	/*ANIMATION CSS*/
