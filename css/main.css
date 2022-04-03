@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.Header-content{
+    width: 1050px;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.Header-content h1{
+    font-size: 42px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Intro-title{
+    width: 95%;
+    text-align: center;
+    margin: 10px;
+}
+
+.Intro-content{
+	position: relative;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Intro-slider{
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Intro-slides{
+    width: 300%;
+    height: 400px;
+    display: flex;
+}
+
+.Intro-slide-item{
+    width: 350px;
+    height: 400px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Avatar{
+    width: 216px;
+    height: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 .25rem .25rem rgba(0,0,0,.075);
+}
+
+.Avatar img {
+    width: 200px;
+}
+
+.Info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.Info span{
+    text-align: center;
+    margin: 5px 0;
+}
+
+.Button-ersonal-cv{
+    background-color: #0099ff;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.Button-ersonal-cv a{
+    padding: 10px;
+}
+
+.Button-ersonal-cv a:active b{
+    color: white;
+}
+
+input{
+    display: none;
+}
+
+.Navigation-manual{
+    display: none;
+	position: absolute;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 35px;
+}
+
+label{
+    padding: 5px 25px;
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+    border-radius: 10px;
+    border: 1px solid #3399ff;
+}
+
+#Button-slide1:checked ~ .first{
+    margin-left: 0;
+}
+#Button-slide2:checked ~ .first{
+    margin-left: -350px;
+}
+#Button-slide3:checked ~ .first{
+    margin-left: -700px;
+}
+
+#Button-slide1:checked ~ .Navigation-manual .Button-slide-manual1{
+    background-color: #3399ff;
+}
+#Button-slide2:checked ~ .Navigation-manual .Button-slide-manual2{
+    background-color: #3399ff;
+}
+#Button-slide3:checked ~ .Navigation-manual .Button-slide-manual3{
+    background-color: #3399ff;
+}
+
+h1, h2{
+    color: rgba(38, 38, 38, 0.75);
+}
+
+b{
+    color: #2d3239;
+}
