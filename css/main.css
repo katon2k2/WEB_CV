@@ -25,7 +25,6 @@ header{
     margin: 40px 0;
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 
 .Header-content h1{
@@ -82,6 +81,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 1s;
 }
 
 .Avatar{

@@ -1,0 +1,79 @@
+@media only screen and (min-width: 1100px){
+	.Intro-content{
+		width: 1050px;
+	}
+	.Intro-slider{
+		width: 1050px;
+	}
+	.Intro-slide-item{
+		transition: none;
+	}
+	.first{
+		margin-left: 0!important;
+	}
+}
+
+@media only screen and (min-width: 550px) and (max-width: 1099.90px){
+	.Header-content{
+		margin: 25px 0;
+	}
+	.Header-content h1{
+	    font-size: 37px;
+	}
+	.Intro-title{
+		position: relative;
+		bottom: 15px;
+	}
+	.Intro-content{
+		width: 500px;
+		height: 550px;
+	}
+	.Intro-slider{
+		width: 350px;
+	}
+	.Intro-slide-item{
+		background-color: rgba(51, 153, 255, 0.5);
+	}
+	.Navigation-manual{
+		display: flex;
+		bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 549.90px){
+	.Header-content{
+		width: 90%;
+		text-align: center;
+    	margin: 40px 0;
+	}
+	.Header-content h1{
+	    font-size: 32px;
+	}
+	.Intro-title{
+		position: relative;
+		bottom: 15px;
+	}
+	.Intro-content{
+		width: 95%;
+		height: 550px;
+	}
+	.Intro-slider, .Intro-slide-item{
+		width: 300px;
+	}
+	.Intro-slide-item{
+		background-color: rgba(51, 153, 255, 0.5);
+	}
+	.Navigation-manual{
+		display: flex;
+		bottom: 15px;
+	}
+	#Button-slide1:checked ~ .first{
+	    margin-left: 0;
+	}
+	#Button-slide2:checked ~ .first{
+	    margin-left: -300px;
+	}
+	#Button-slide3:checked ~ .first{
+	    margin-left: -600px;
+	}
+}
