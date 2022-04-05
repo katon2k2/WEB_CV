@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+	<link rel="icon" href="../images/admin_logo.png">
+	<link rel="stylesheet" href="../css/admin.css">
+	<link rel="stylesheet" href="../css/admin_responsive.css">
+	<title>Admin page</title>
+</head>
+<body>
+	<nav class="Navbar-container">
+		<div class="User-container">
+			<div class="Avatar-container">
+				<div class="Avatar-user">
+					<img src="../images/avatar.png" alt="">
+				</div>
+			</div>
+			<div class="Name-user">
+				<h3>admin</h3>
+			</div>
+		</div>
+		<div class="Btn-navigation">
+			<a href="../login.html" class="Btn-log-out">Đăng xuất</a>
+			<a href="../../index.html" class="Btn-return-home-page">Quay lại trang giới thiệu</a>
+		</div>
+		<div class="Accordion-container">
+			<div class="Accordion-father-item">
+				<a href="admin_home.html"><label class="Label-activate first"><i class="fa-solid fa-house-user"></i>Trang chủ</label></a>
+			</div>
+			<div class="Accordion-father-item">
+				<input type="checkbox" name="Btn-management" id="Account-management">
+				<label for="Account-management"><i class="fa-solid fa-key"></i>Quản lý tài khoản</label>
+				<div class="Accordion-child-item">
+					<div>
+						<a href="admin_add_account.html">Thêm tài khoản</a>
+						<a href="admin_update_information_account.html">Cập nhật thông tin tài khoản</a>
+					</div>
+				</div>
+			</div>
+			<div class="Accordion-father-item">
+				<input type="checkbox" name="Btn-management" id="CV-management">
+				<label for="CV-management"><i class="fa-solid fa-address-card"></i>Quản lý CV</label>
+				<div class="Accordion-child-item">
+					<div>
+						<a href="admin_add_cv.html">Thêm CV</a>
+						<a href="admin_edit_content_cv.html">Chỉnh sửa nội dung CV</a>
+						<a href="admin_remove_cv.html">Xóa CV</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<div class="Title-main">
+			<h1>Chào mừng đến với trang quản trị của nhóm 17</h1>
+		</div>
+		<div class="Content">
+			<div class="Background-home-admin">
+				<img src="../images/background_home_admin.png" alt="">
+			</div>	
+		</div>
+	</main>
+</body>
+</html>

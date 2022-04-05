@@ -1,0 +1,50 @@
+@media only screen and (min-width: 1000px) and (max-width: 1460px){
+	.Btn-navigation{
+		flex-direction: column;
+		align-items: center;
+	}
+	.Btn-navigation a{
+		margin: 0;
+	}
+
+	.Btn-navigation .Btn-log-out{
+		margin-bottom: 5px;
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 999.90px){
+	body{
+		flex-direction: column;
+	}
+	.Title-main h1{
+		font-size: 100%;
+	}
+}
+
+@media only screen and (max-width: 799.90px){
+	body{
+		flex-direction: column;
+	}
+	.Title-main h1{
+		font-size: 100%;
+	}
+	.Form-registered,
+	.Form-edit-account{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 35px 0;
+	}
+	.Input-user-name,
+	.Input-password{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
+	.Edit table tr th:not(.Column-edit),
+	.Edit table tr td:not(.Column-edit){
+		flex-basis: 45%;
+		border: 1px solid #009999;
+		padding: 3px 0;
+	}
+}

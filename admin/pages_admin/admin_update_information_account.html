@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+	<link rel="icon" href="../images/admin_logo.png">
+	<link rel="stylesheet" href="../css/admin.css">
+	<link rel="stylesheet" href="../css/admin_responsive.css">
+	<title>Add account page</title>
+</head>
+<body>
+	<nav class="Navbar-container">
+		<div class="User-container">
+			<div class="Avatar-container">
+				<div class="Avatar-user">
+					<img src="../images/avatar.png" alt="">
+				</div>
+			</div>
+			<div class="Name-user">
+				<h3>admin</h3>
+			</div>
+		</div>
+		<div class="Btn-navigation">
+			<a href="../login.html" class="Btn-log-out">Đăng xuất</a>
+			<a href="../../index.html" class="Btn-return-home-page">Quay lại trang giới thiệu</a>
+		</div>
+		<div class="Accordion-container">
+			<div class="Accordion-father-item">
+				<a href="admin_home.html"><label class="first"><i class="fa-solid fa-house-user"></i>Trang chủ</label></a>
+			</div>
+			<div class="Accordion-father-item">
+				<input type="checkbox" name="Btn-management" id="Account-management" checked>
+				<label for="Account-management"><i class="fa-solid fa-key"></i>Quản lý tài khoản</label>
+				<div class="Accordion-child-item">
+					<div>
+						<a href="admin_add_account.html">Thêm tài khoản</a>
+						<a href="admin_update_information_account.html" class="activate">Cập nhật thông tin tài khoản</a>
+					</div>
+				</div>
+			</div>
+			<div class="Accordion-father-item">
+				<input type="checkbox" name="Btn-management" id="CV-management">
+				<label for="CV-management"><i class="fa-solid fa-address-card"></i>Quản lý CV</label>
+				<div class="Accordion-child-item">
+					<div>
+						<a href="admin_add_cv.html">Thêm CV</a>
+						<a href="admin_edit_content_cv.html">Chỉnh sửa nội dung CV</a>
+						<a href="admin_remove_cv.html">Xóa CV</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<div class="Title-main">
+			<h1>Cập nhật thông tin tài khoản</h1>
+		</div>
+		<div class="Content">
+			<div class="Edit-info-account">
+				<form action="#" onsubmit="return(false)" class="Form-edit-account">
+					<div class="Input-user-name">
+						<label for="Edit-user-name">Tên đăng nhập mới</label>
+						<input type="text" autocomplete="off" id="Edit-user-name" readonly>
+					</div>
+					<div class="Input-password">
+						<label for="Edit-password">Mật khẩu mới</label>
+						<input type="text" autocomplete="off" id="Edit-password" readonly>
+					</div>
+					<button id="Save-account">Lưu</button>
+				</form>
+			</div>
+			<div class="Title-show-list-account">
+				<h3>Danh sách tài khoản trong hệ thống</h3>
+			</div>
+			<div class="Show-list-account Edit">
+				<table>
+					<tr>
+						<th>Tên đăng nhập</th>
+						<th>Mật khẩu</th>
+						<th class="Column-edit">Nút sửa</th>
+						<th class="Column-edit">Nút xóa</th>
+					</tr>
+					<tr>
+						<td>admin</td>
+						<td>admin</td>
+						<td class="Column-edit"><button id="Edit-account">Sửa</button></td>
+						<td class="Column-edit"><button id="Remove-account">Xóa</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</main>
+	<script type="text/javascript" src="../js/admin_update_information_account_js.js"></script>
+</body>
+</html>
